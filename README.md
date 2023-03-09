@@ -103,7 +103,7 @@ from sklearn.linear_model import LinearRegression
 # for using LinearRegression.fit() function
 expls_to_fit = np.concatenate(train_expls, axis=1)
 
-# Built a model of Linear Regression.
+# Build a model of Linear Regression.
 # Here, respons_to_fit is a response variable, which is a 1-D numpy
 # array with the same length as the row-size of expls_to_fit.
 model = LinearRegression().fit(
