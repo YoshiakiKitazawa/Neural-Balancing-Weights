@@ -170,7 +170,7 @@ if __name__ == '__main__':
       Y_estimated_GBT_nbw)
 
     print('--------------------------------------------------------------')
-    print(f'Mean Square Error of Estimation = {np.sqrt(mse_GBT_nbw)}')
+    print(f'Mean Square Error of Estimation = {mse_GBT_nbw}')
     print('--------------------------------------------------------------')
 
     # Save the above result (the model of GBT)
