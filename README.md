@@ -2,7 +2,7 @@
 
 This repository contains a library[^1][^2] for estimating Neural Balancing Weights (NBW)
 proposed in our paper ― [Generalized Balancing Weights via Deep Neural
-Networks](https://arxiv.org/abs/2211.07533).
+Networks](https://arxiv.org/abs/2211.07533v4).
 For reproducing results of experiments in the paper, run
 [the original code](./reproduction/HowToReproduce.md) used in the paper.
 

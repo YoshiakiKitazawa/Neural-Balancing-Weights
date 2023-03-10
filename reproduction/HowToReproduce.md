@@ -1,7 +1,7 @@
 # Reproducing Experiments in Our Paper
 
 This document discribes how to reproduce the results of Experiment 1 and Experiment 2 
-in our paper ― [Generalized Balancing Weights via Deep Neural Networks](https://arxiv.org/abs/2211.07533).
+in our paper ― [Generalized Balancing Weights via Deep Neural Networks](https://arxiv.org/abs/2211.07533v4).
 
 
 **Installation**
