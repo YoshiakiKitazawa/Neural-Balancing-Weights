@@ -50,7 +50,9 @@ and has rows with the same size and columns with various sizes.
 A sample code of estimating the weights in the above setting is as follows.
 Here, ```train_expls``` is  training data (i.e. a list of 2-dimensional numpy arrays).
 ```
-# Neural network structure 
+from libs.NeuralBW import train_and_enhance_NBW
+
+# The neural network structure used for estimating the balancing weights
 params_nn = {
         'hidden_dim': 20
         'n_layers': 8}
@@ -78,8 +80,8 @@ The details of the outputs in the above code are as follows:
       at ```'./out/_nbw_models/'``` in binary format. This list only contains paths of 
       the models who enchanced the balancing ability of the weights.
 * ```current_best_alpha_infomation_estimated```
-    - An estimate of the alpha-information of the distribution balanced by the weights obtained from the 
-      all models of ```filePaths_of_nbw_models_to_use_list```.
+    - An estimate of the alpha-information of the distribution balanced by the weights obtained from all
+      the models of ```filePaths_of_nbw_models_to_use_list```.
 * ```alpha_infos_of_all_nbw_models```
     - A dictionary from a path of all NBW models trained to an estimate of alpha-iformation of 
       the distribution balanced by the weights of the models.
@@ -87,6 +89,8 @@ The details of the outputs in the above code are as follows:
 ### Estimating balancing weights
 A sample code of estimating the weights from the above results is as follows:
 ```
+from libs.NeuralBW import estimate_balancing_weights
+
 balancing_weights_estimated = estimate_balancing_weights(
       train_expls,
       params_nbw,
